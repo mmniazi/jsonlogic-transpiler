@@ -53,3 +53,6 @@ def execute(logic, _id):
     scope = {}
     exec(code, {}, scope)
     return scope[name]
+
+
+__all__ = ["execute", "transpile"]
